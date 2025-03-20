@@ -8,4 +8,4 @@ class UserBookReview(models.Model):
     rating = models.IntegerField(validators=[MinValueValidator(1, message="Rating must be at least 1."),
                                              MaxValueValidator(10, message="Rating cannot exceed 10.")])
     comment = models.TextField()
-    date = models.DateTimeField(auto_now_add=True)
+    date= models.DateTimeField(auto_now_add=True)
